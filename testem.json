@@ -1,0 +1,5 @@
+{
+    "test_page": "tests/tests.html",
+    "before_tests": "grunt lint",
+    "launch_in_dev": ["phantomjs"]
+}

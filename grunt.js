@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     lint: {
-      files: ['grunt.js', 'tracekit.js']
+      files: ['grunt.js', 'tracekit.js', 'tests/tests.js']
     },
     watch: {
       files: '<config:lint.files>',
