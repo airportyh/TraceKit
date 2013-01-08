@@ -28,6 +28,7 @@ function findFrameThrown(stack, matchCode){
 describe('TraceKit', function(){
     
     it('can subscribe/report', function(){
+        console.log(window.onerror.toString());
         try{
             throw new Error("Boom!");
         }catch(e){
@@ -66,11 +67,5 @@ describe('TraceKit', function(){
             });
         }
     });
-
-    /*
-    it('does stuff', function(){
-
-    });
-*/
     
 });
