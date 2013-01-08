@@ -11,6 +11,18 @@ module.exports = function(grunt) {
       files: '<config:lint.files>',
       tasks: 'lint'
     },
+    concat: {
+      testling: {
+        src: [
+          "tests/jasmine.js",
+          "tests/jasmine-tap.js",
+          "tracekit.js",
+          "tests/tests.js",
+          "tests/testling-bootstrap.js"
+        ],
+        dest: 'tests/testling-bundle.js'
+      }
+    },
     jshint: {
       options: {
         // Uncommented are default grunt options
