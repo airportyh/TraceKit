@@ -14,10 +14,10 @@ for (var i = 0, len = scripts.length; i < len; i++){
         script + '"></' + 'script>')
 }
 
-setTimeout(function(){
+window.onload = function(){
     var jasmineEnv = jasmine.getEnv()
     jasmineEnv.addReporter(new TAPReporter(function(msg){
       console.log(msg)
     }))
     jasmineEnv.execute()
-}, 0)
+}
