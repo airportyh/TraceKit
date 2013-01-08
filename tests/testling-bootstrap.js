@@ -6,12 +6,11 @@ var scripts = ["tests/testling-presetup.js",
   "tests/jasmine.js",
   "tests/jasmine-tap.js",
   "tests/tests.js",
-  "tracekit.js",
-  "tests/testling-bootstrap.js"]
+  "tracekit.js"]
 
-for (var i = 0; i < scripts.length; i++){
+for (var i = 0, len = scripts.length; i < len; i++){
     var script = scripts[i]
-    document.write('<script src="https://raw.github.com/airportyh/TraceKit/master/' + 
+    document.write('<script src="http://raw.github.com/airportyh/TraceKit/master/' + 
         script + '"></' + 'script>')
 }
 
