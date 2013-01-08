@@ -11,7 +11,7 @@
   "dependencies": {
   },
   "testling": {
-    "scripts": "tests.js",
+    "scripts": "tests/tests.js",
     "browsers": [ "ie8", "ie9", "ff/13", "chrome/20" ]
   }
 }

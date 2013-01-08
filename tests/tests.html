@@ -5,11 +5,12 @@
   <script src="jasmine.js"></script>
   <script src="/testem.js"></script>
   <script src="jasmine-html.js"></script>
+  <script src="jasmine-tap.js"></script>
   <script>
     (function() {
       var jasmineEnv = jasmine.getEnv()
       jasmineEnv.addReporter(new jasmine.HtmlReporter)
-
+      jasmineEnv.addReporter(new TAPReporter(console.log))
       window.onload = function() {
         jasmineEnv.execute()
       };
