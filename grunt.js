@@ -14,6 +14,7 @@ module.exports = function(grunt) {
     concat: {
       testling: {
         src: [
+          "tests/testling-presetup.js",
           "tests/jasmine.js",
           "tests/jasmine-tap.js",
           "tests/tests.js",
