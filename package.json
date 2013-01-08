@@ -2,9 +2,16 @@
   "name": "TraceKit",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "~0.3.17"
+    "grunt": "~0.3.17",
+    "tape": "~0.1.5"
   },
   "scripts": {
     "test": "grunt travis --verbose"
+  },
+  "dependencies": {
+  },
+  "testling": {
+    "files": "tests.js",
+    "browsers": [ "ie8", "ie9", "ff/13", "chrome/20" ]
   }
 }
