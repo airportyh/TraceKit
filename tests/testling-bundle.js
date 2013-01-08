@@ -2957,8 +2957,8 @@ describe('TraceKit', function(){
 
                 // find the frame where the error was thrown by
                 // matching against the code that threw the error
-                //var frameThrown = findFrameThrown(stackInfo.stack, 'throw new Error("Boom!");');
-                //expect(frameThrown).not.toBe(null);
+                var frameThrown = findFrameThrown(stackInfo.stack, 'throw new Error("Boom!");');
+                expect(frameThrown).not.toBe(null);
 
                 // verify properties on the stack object
                 //expect(frameThrown.url).toBe(absPath('/tests/tests.js'));
