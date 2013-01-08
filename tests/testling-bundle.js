@@ -2926,7 +2926,7 @@ function findFrameThrown(stack, matchCode){
 }
 
 describe('TraceKit', function(){
-    /*
+    
     it('can subscribe/report', function(){
         try{
             throw new Error("Boom!");
@@ -2966,11 +2966,12 @@ describe('TraceKit', function(){
             });
         }
     });
-*/
 
+    /*
     it('does stuff', function(){
 
     });
+*/
     
 });
 var jasmineEnv = jasmine.getEnv()
