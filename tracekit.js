@@ -269,6 +269,12 @@ TraceKit.computeStackTrace = (function computeStackTraceWrapper() {
      */
     function loadSource(url) {
         console.log('loading source ' + url)
+        try{
+            throw new Error()
+        }catch(e){
+            console.log(e.message)
+            if (e.stack) console.log(e.stack)
+        }
         if (!TraceKit.remoteFetching) { //Only attempt request if remoteFetching is on.
             return '';
         }
