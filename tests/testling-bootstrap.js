@@ -1,3 +1,7 @@
+console.log(location.href)
+console.log(document.documentElement.innerHTML)
+
+
 var scripts = ["tests/testling-presetup.js",
   "tests/jasmine.js",
   "tests/jasmine-tap.js",
