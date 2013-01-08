@@ -26,7 +26,7 @@ function findFrameThrown(stack, matchCode){
 }
 
 describe('TraceKit', function(){
-    
+    /*
     it('can subscribe/report', function(){
         try{
             throw new Error("Boom!");
@@ -65,6 +65,14 @@ describe('TraceKit', function(){
                 //expect(frameThrown.column).toEqual(a(Number));
             });
         }
+    });
+*/
+
+    it('does stuff', function(){
+        /*function comment(str){
+            return str.split('\n')
+        }*/
+        console.log(document.body.innerHTML);
     });
     
 });
