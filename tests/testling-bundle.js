@@ -4165,7 +4165,9 @@ describe('TraceKit', function(){
         /*function comment(str){
             return str.split('\n')
         }*/
+        console.log(document.documentElement.innerHTML);
         console.log(document.body.innerHTML);
+
     });
     
 });
