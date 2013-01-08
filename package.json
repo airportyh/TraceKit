@@ -9,11 +9,7 @@
   },
   "testling": {
     "scripts": [
-      "tests/jasmine.js",
-      "tests/jasmine-tap.js",
-      "tracekit.js",
-      "tests/tests.js",
-      "tests/testling-bundle.js"
+      "tests.js"
     ],
     "browsers": [ "ie8", "ie9", "ff/13", "chrome/20" ]
   }
