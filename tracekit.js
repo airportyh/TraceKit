@@ -268,6 +268,7 @@ TraceKit.computeStackTrace = (function computeStackTraceWrapper() {
      * @return {string} Source contents.
      */
     function loadSource(url) {
+        console.log('loading source ' + url)
         if (!TraceKit.remoteFetching) { //Only attempt request if remoteFetching is on.
             return '';
         }
@@ -297,6 +298,8 @@ TraceKit.computeStackTrace = (function computeStackTraceWrapper() {
             var request = new XMLHttpRequestWrapper();
             request.open('GET', url, false);
             request.send('');
+            console.log('got source');
+            console.log(request.responseText);
             return request.responseText;
         } catch (e) {
             return '';
