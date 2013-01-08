@@ -1,5 +1,5 @@
-console.log(window.onerror.toString());
-window.onerror = null
+
+window.onerror = function(){};
 var isCommonJS = typeof window == "undefined" && typeof exports == "object";
 
 /**
