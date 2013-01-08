@@ -1047,7 +1047,7 @@ TraceKit.computeStackTrace = (function computeStackTraceWrapper() {
                         originalCallback.apply(this, arguments);
                     } catch (e) {
                         TraceKit.report(e);
-                        //throw e;
+                        throw e;
                     }
                 };
             }
