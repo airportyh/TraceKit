@@ -10,7 +10,7 @@
   },
   "testling": {
     "scripts": [
-      "tests/testling-bundle.js"
+      "tests/testling-bootstrap.js"
     ],
     "browsers": [ "ie8", "ie9", "ff/13", "chrome/20" ]
   }
