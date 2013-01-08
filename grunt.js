@@ -16,7 +16,6 @@ module.exports = function(grunt) {
         src: [
           "tests/jasmine.js",
           "tests/jasmine-tap.js",
-          "tracekit.js",
           "tests/tests.js",
           "tests/testling-bootstrap.js"
         ],
