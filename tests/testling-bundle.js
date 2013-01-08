@@ -3233,7 +3233,7 @@ TraceKit.report = (function reportModuleWrapper() {
  *     }
  */
 TraceKit.computeStackTrace = (function computeStackTraceWrapper() {
-    var debug = false,
+    var debug = true,
         sourceCache = {};
 
     /**
